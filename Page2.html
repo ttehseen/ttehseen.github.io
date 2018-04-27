@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+/* * {
+  box-sizing: border-box;
+}
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+   padding: 0; 
+   margin: 10; 
+  /* position: absolute;
+  left: 18%; */
+}
+
+#myUL li a {
+   border: 1px solid #ddd; 
+  /* position: absolute; */
+  left: 18%;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+} */
+.vl {
+    border-left: 1px solid black;
+    height: 85%;
+    position: absolute;
+    left: 18%;
+    margin-left: -3px;
+    bottom: 0;
+}
+body {
+	background: url(back3.jpg); 
+    opacity:0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; /* Safari */
+    
+}
+body.fade-in {
+    opacity: 0;
+    transition: none;
+}
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+    position: absolute; 
+    left: 3.5%; top: 15%;
+}
+button {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.logoutbtn:hover,
+.logoutbtn:focus {
+    background-color: red;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.logoutbtn {
+  position: absolute;
+    top: 33%;
+    left: 6.125%;
+     width: 5%;
+     text-align: center;
+	}
+</style>
+<title>Second Page</title>
+</head>
+<body onload="document.body.style.opacity='1'" >
+<img src="logo2.png" class = "logoimg" style="width:250px;height:100px;">
+<div class="imgcontainer">
+ <!--    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+      <img src="me2.jpg" alt="Avatar" class="avatar">
+    </div>
+<button type= "button" onclick="location.href = 'index.html';" class= logoutbtn>Lookup Review</button>
+<div class="vl"></div>
+
+<!-- <h2>Search Courses</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Introduction To Computer Science</a></li>
+  <li><a href="#">Proof</a></li>
+
+  <li><a href="#">Introductory Data Structures and Algorithms</a></li>
+  <li><a href="#">Introduction to Python</a></li>
+
+  <li><a href="#">Linear Algebra</a></li>
+  <li><a href="#">Designing Interactive Systems</a></li>
+  <li><a href="#">Object Oriented Programming</a></li>
+</ul>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script> -->
+</body>
+</html>
+
+
+
