@@ -387,8 +387,9 @@ h1, h2, p, a, span{
 					}
 					.menu-box-tab:hover .menu-box-number {
 						
-            -webkit-transform: rotate(360deg);
+            			-webkit-transform: rotate(360deg);
 						transform: rotate(360deg);
+						background: rgb(214, 87, 103);
 					}
 		
 		/********************************************* RIGHT CONTAINER ****************************************/
