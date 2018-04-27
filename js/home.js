@@ -21,12 +21,12 @@ function myFunction2() {
     filter2 = input2.value.toUpperCase();
     ul2 = document.getElementById("myUL2");
     li2 = ul2.getElementsByTagName("li2");
-    for (i = 0; i < li2.length; i++) {
-        a2 = li2[i].getElementsByTagName("a2")[0];
+    for (i2 = 0; i2 < li2.length; i2++) {
+        a2 = li2[i2].getElementsByTagName("a2")[0];
         if (a2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
-            li2[i].style.display = "";
+            li2[i2].style.display = "";
         } else {
-            li2[i].style.display = "none";
+            li2[i2].style.display = "none";
 
         }
     }
