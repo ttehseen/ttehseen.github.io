@@ -1,34 +1,48 @@
-// Some code thanks to @chrisgannon
+$(document).ready(function(){
+  $(".editor-header a").click(function(e){
+    e.preventDefault();
 
-var select = function(s) {
-  return document.querySelector(s);
-}
-
-function randomBetween(min,max)
-{
-    var number = Math.floor(Math.random()*(max-min+1)+min);
-  
-    if ( number !== 0 ){
-      return number;
-    }else {
-      return 0.5;
+    var _val = $(this).data("role"),
+        _sizeValIn = parseInt($(this).data("size-val") + 1),
+        _sizeValRe = parseInt($(this).data("size-val") - 1),
+        _size = $(this).data("size");
+    if(_size == "in-size"){
+      document.execCommand(_val, false, _sizeValIn + "px");
+    } else{
+      document.execCommand(_val, false, _sizeValRe + "px");
     }
-}
+  });
+});
 
-var tl = new TimelineMax();
+$(document).ready(function(){
+  var $text = $("#text"),
+      $submit = $("input[type='submit']"),
+      $listComment = $(".list-comments"),
+      $loading = $(".loading"),
+      _data,
+      $totalCom = $(".total-comment");
 
-for(var i = 0; i < 20; i++){
+  $totalCom.text($(".list-comments > div").length);
 
-  var t = TweenMax.to(select('.bubble' + i), randomBetween(1, 1.5), {
-    x: randomBetween(12, 15) * (randomBetween(-1, 1)),
-    y: randomBetween(12, 15) * (randomBetween(-1, 1)), 
-    repeat:-1,
-    repeatDelay:randomBetween(0.2, 0.5),
-    yoyo:true,
-    ease:Elastic.easeOut.config(1, 0.5)
-  })
-
-  tl.add(t, (i+1)/0.6)
-}
-
-tl.seek(50);
+  $($submit).click(function(){
+    if($text.html() == ""){
+      alert("Plesea write a comment!");
+      $text.focus();
+    } else{
+      _data = $text.html();
+      $.ajax({
+        type: "POST",
+        url: window.local,
+        data: _data,
+        cache: false,
+        success: function(html){
+          $loading.show().fadeOut(300);
+          $listComment.append("<div>"+_data+"</div>");
+          $text.html("");
+          $totalCom.text($(".list-comments > div").length);
+        }
+      });
+      return false;
+    }
+  });
+});
