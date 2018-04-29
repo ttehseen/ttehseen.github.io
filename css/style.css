@@ -934,6 +934,11 @@ a:hover:after {
     right: -105%;
     top: -30px;
 }
+.special.roundrect{
+  position: relative;
+  right: -100%;
+  top: -50px;
+}
 .roundrect .up {
   border-radius: 1rem 1rem 0 0;
 }
@@ -1018,7 +1023,10 @@ a:hover:after {
   -webkit-animation: bump 200ms;
           animation: bump 200ms;
 }
-
+#popup{
+  margin-left: -100px;
+  margin-top: 50px;
+}
 @-webkit-keyframes bump {
   30% {
     -webkit-transform: scale(1.2);
