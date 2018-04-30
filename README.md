@@ -50,11 +50,6 @@ Alongside the paper prototype, some digital prototypes were also drawn up with t
 The Paper Prototype and Digital Wireframes were then presented to potential users in the Yale-NUS community and their feedback was noted. At this point, the interviews conducted were short to ensure the project is on the right track. The features were shared with them and criticisms noted. However, I expected to see all 8 individuals a second time after the High Fidelity Prototype was created to get better insight.
 The process of converting the paper-based concept to a semi-interactive static webpage was not very simple. The general layout remained consistent but crucial details such as choice of color, font, images, design of the logo required a great deal of thought.
 
-## Final Iteration:
-
-
-
- 
 
  
 
