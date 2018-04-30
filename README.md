@@ -1,5 +1,31 @@
-Yale-NUS College (YNC) has a very busy work culture that places a lot of importance on learning. Like any college's student, one of the biggest decisions that YNC students take every semester is choosing classes for next semester. However, no streamlined vessel exists with all the information they would need to inform this decision. One Wordpress microsite exists that has, among others, issues with updating and security. This project reworks this microsite, keeping its original name #YNC Coursemate#. This new web application aims to provide a consolidated platform that serves the needs of the student population by providing an intuitive, exhaustive, aesthetic and modern platform for course and instructor evaluations. 
+# Introduction:
+ 
+Yale-NUS College (YNC) has, for long, felt the dearth for a comprehensive course evaluation platform to help to students inform their course evaluation decisions. Like any college’s student, one of the biggest decisions that YNC students take every semester is choosing classes for next semester. However, since no streamlined vessel existed, this information was dispersed over various platforms including but not limited to a WordPress blog, Facebook groups, Google Sheets and direct email correspondence. YNC Coursemate was envisioned to consolidate information from all these sources into one intuitive, exhaustive, aesthetic and modern web application for course and instructor evaluations. Much was done in this regard and much is left to do. At the culmination of this semester, I have a working front end of the system hosted online. 
+ 
+(URL: https://ttehseen.github.io/ GitHub Repo: https://github.com/ttehseen/ttehseen.github.io ) 
+ 
+I will treat YNC Coursemate as an ongoing project and collaborate with others to make it a reality.
+ 
+# General Instructions:
+ 
+1.	Navigate to https://ttehseen.github.io/ and click ‘Login’. This will open a popup that will prompt you to key-in your Yale-NUS Email ID and password. Do note that only email IDs that end with ‘@u.yale-nus.edu.sg’ will be accepted to limit website access to only Yale-NUS students. There is an option to ‘Remember me’ that stores your log-in information for next time. There is also an option to reset your password if you forget. Clicking outside the popup closes it.
 
+2. Once successfully logged in, you will be redirected to the homepage. This page displays your profile picture, as well as navigation links to your reviews, a Help page and a Settings page. The help page contains instructions on how to navigate the website while the settings page helps manage things like changing font sizes, deleting your account etc. There is also a Logout button that, as the name suggests, logs you out of YNC Coursemate and redirects you to the homepage. What we are most interested in, for now, is searching for an instructor’s evaluation. There are two search boxes that display the top three results for your major. Let’s search for a popular instructor, Prof Simon Perrault, in the Search for professors… search box. The search box narrows down on professors as you type out the name. Let’s click on Simon Perrault. We now get redirected to his evaluation page.
+3.    We are now in the most important section of the entire website: an evaluation page. There are quite a few features that we will look at here.
+                       I.        Full name and picture of Professor Perrault. 
+                     II.        His email address. By clicking on the email address, we are redirected to an email client that lets us write an email to Professors Perrault. Let’s send him this cat meme: https://bit.ly/2ymuSRn .
+                   III.        Office location and hours information.
+                   IV.        CV: Go ahead and click on Perrault.pdf to access his official CV from the Yale-NUS website.
+                     V.        List of past students. Here are the students that he has taught earlier and would be appropriate people to ask for reviews directly. Go ahead and click on Taha Tehseen to send me an email. I have a lot of nice things to say about him.
+                   VI.        List of offered courses. These redirect you to the respective course evaluation pages that are offered by Prof Perrault. Go ahead and click on the link for OOP to redirect to the evaluation page for OOP. Once you are done looking at that page, click on Prof Perrault’s name under Instructors to redirect back to this page since we are not done yet.
+                 VII.        If you look at the column at the right, there is a list of reviews on Prof Perrault. These are the top four reviews based on their time stamp and the net number of upvotes they have received. You can upvote/downvote each review. Click on See all review to open a popup with all the reviews. Click outside the popup to close it.
+               VIII.        Below the list of reviews is a form to submit a new review with sliders to assign values to each attribute. Once you are done with the sliders, you can write down a qualitative review as well and click submit. The review would be added to the list and its subject line is going to consist of all the adjectival words used in it. This provides you snapshot of the review that you can use to decide if you want to read or not. For instance, if you are looking for critical review, you will look for a subject line that has negative adjectives like “difficult” in it.
+                   IX.        If you look to the bottom left of the page, there is an overall aggregate score and aggregate scores for each respective attribute for the Prof Perrault. For instance, if I am looking for critical reviews of a professor, then I will look for negative adjectives in the ‘subject’ line. 
+                     X.        At any point, you can click on the halcyon in the top left to navigate back to the home page.
+ 
+
+
+The rest of this README goes through the various iterations and processes that went into building this Project.
  
 
 # **Iterations:**
